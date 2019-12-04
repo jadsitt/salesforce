@@ -1,0 +1,14 @@
+{
+  "orgName": "related-list-plus-plus",
+  "edition": "Developer",
+  "hasSampleData": true,
+  "orgPreferences": {
+    "enabled": [
+      "S1DesktopEnabled",
+      "PathAssistantsEnabled"
+    ],
+    "disabled": [
+      "S1EncryptedStoragePref2"
+    ]
+  }
+}
