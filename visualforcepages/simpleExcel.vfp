@@ -1,0 +1,14 @@
+  <!--
+    This page must be accessed with an Account ID in the URL.
+    For example: https://<salesforceInstance>/apex/ContactsCsvPage?id=001D000000JRBet
+    https://developer.salesforce.com/docs/atlas.en-us.pages.meta/pages/pages_styling_content_type.htm
+-->
+<apex:page standardController='Account' contentType='application/vnd.ms-excel#contacts.xls'>
+    <apex:pageBlock title='Contacts'>
+        <apex:pageBlockTable value='{!account.Contacts}' var='contact'>
+            <apex:column value='{!contact.Name}'/>
+            <apex:column value='{!contact.MailingCity}'/>
+            <apex:column value='{!contact.Phone}'/>
+        </apex:pageBlockTable>
+    </apex:pageBlock>
+</apex:page>
