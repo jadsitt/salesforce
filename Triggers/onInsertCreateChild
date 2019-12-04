@@ -1,0 +1,9 @@
+trigger addchild on anobject (after insert, after update) {
+    list<sObject__c> solist = trigger.new;
+    sObject__s s= [select id from template where isstandard = true];
+    list<sObject__c> newchildren = new list();
+    for(Sobject si: solist){
+            newchildren.add(new sObject__c(parentid=si.id));
+    }
+    insert newchildren;
+}
