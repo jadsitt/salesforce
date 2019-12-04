@@ -1,5 +1,6 @@
 public class SchemaGlobalDescribe{
 
+   //system.debug('Prifix–> ' + customObject__c.sobjecttype.getDescribe().getKeyPrefix());
 
    public static String findIdPrefixFromObjectName(String sObjectName){
       Map<String, Schema.SObjectType> m  = Schema.getGlobalDescribe() ;
